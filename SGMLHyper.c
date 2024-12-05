@@ -2179,6 +2179,7 @@ Widget SGMLHyperLoadFile(widget,fname)
 Widget widget;
 char   *fname;
 {
+//    extern char *sys_errlist[];
     Widget result = NULL;
 
     FILE *f = fopen(fname,"r");
@@ -2190,7 +2191,7 @@ char   *fname;
     else
     {
         char msg[1024];
-        sprintf(msg,"%s: %s",fname,strerror(errno));
+        sprintf(msg,"%s: %s",fname,sys_errlist[errno]);
         XtWarning(msg);
     }
     return result;  

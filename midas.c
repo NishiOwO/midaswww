@@ -3397,7 +3397,7 @@ char *fallback[];
     
     /* Open the UID files (the output of the UIL compiler) in the hierarchy*/
 
-    MidasHierarchy = MidasOpenUidFile("midas.uid",toplevel_widget);
+    MidasHierarchy = MidasOpenUidFile("/usr/local/lib/midas.uid",toplevel_widget);
  
     /* Register the items MRM needs to bind for us. */
 
