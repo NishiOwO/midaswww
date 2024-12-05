@@ -1,0 +1,16 @@
+# Generic makefile - Unix (hp) version
+# 
+            LDLIBS = -lMrm -lXm  -lXt -lXmu -lX11
+         LDOPTIONS = -L/usr/pkg/lib  -L/usr/X11R7/lib
+            CFLAGS = -I/usr/pkg/include -I/usr/X11R7/include -I./
+                RM = rm -f
+               UIL = /usr/pkg/bin/uil
+
+include CommonMakefile
+
+$(PGM):: $(OBJS) 
+	$(RM) $@
+	$(CC) -o $@ $(OBJS) $(LDOPTIONS) $(LDLIBS)
+
+
+
