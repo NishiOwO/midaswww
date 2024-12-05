@@ -13,7 +13,7 @@
 
 #if XtSpecificationRelease == 4
 #define XrmPermStringToQuark(x) XrmStringToQuark(x)
-#endif 
+#endif
 
 extern WidgetClass sGMLTextObjectClass;
 typedef struct _SGMLTextRec  *SGMLTextObject;
@@ -263,8 +263,8 @@ extern "C" {
 }
 #endif
 
-#endif /* _NO_PROTO */
+#endif
 
 #define SGMLIsText(w)     XtIsSubclass(w,sGMLTextObjectClass)
 
-#endif SGMLTEXT_H
+#endif

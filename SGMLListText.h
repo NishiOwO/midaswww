@@ -65,9 +65,9 @@ extern "C" {
 }
 #endif
 
-#endif /* _NO_PROTO */
+#endif
 
 #define SGMLIsListText(w)     XtIsSubclass(w,sGMLListTextObjectClass)
 
-#endif SGMLLISTTEXT_H
+#endif
 

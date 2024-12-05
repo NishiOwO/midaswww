@@ -105,4 +105,4 @@ typedef struct _SGMLHyperRec {
     SGMLHyperPart     sgml_hyper;
 } SGMLHyperRec;
 
-#endif SGMLHYPERP_H
+#endif

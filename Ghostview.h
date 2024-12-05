@@ -196,4 +196,4 @@ typedef struct _GhostviewReturnStruct {
     float xdpi, ydpi;
 } GhostviewReturnStruct;
 
-#endif /* _Ghostview_h */
+#endif

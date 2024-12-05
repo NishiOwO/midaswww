@@ -63,9 +63,9 @@ extern "C" {
 }
 #endif
 
-#endif /* _NO_PROTO */
+#endif
 
 #define SGMLIsMarkerText(w)     XtIsSubclass(w,sGMLMarkerTextObjectClass)
 
-#endif SGMLMARKERTEXT_H
+#endif
 

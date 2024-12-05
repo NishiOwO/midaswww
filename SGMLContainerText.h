@@ -39,9 +39,9 @@ extern "C" {
 }
 #endif
 
-#endif /* _NO_PROTO */
+#endif
 
 #define SGMLIsContainerText(w)     XtIsSubclass(w,sGMLContainerTextObjectClass)
 
-#endif SGMLCONTAINERTEXT_H
+#endif
 

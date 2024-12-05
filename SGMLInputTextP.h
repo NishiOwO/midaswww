@@ -60,4 +60,4 @@ typedef struct _SGMLInputTextRec {
     SGMLInputTextPart      sgml_input_text;
 } SGMLInputTextRec;
 
-#endif SGMLINPUTTEXTP_H
+#endif

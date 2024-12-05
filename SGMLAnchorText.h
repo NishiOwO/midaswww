@@ -46,8 +46,8 @@ extern "C" {
 }
 #endif
 
-#endif /* _NO_PROTO */
+#endif
 
 #define SGMLIsAnchorText(w)     XtIsSubclass(w,sGMLAnchorTextObjectClass)
 
-#endif SGMLANCHORTEXT_H
+#endif

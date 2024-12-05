@@ -55,4 +55,4 @@ typedef struct _SGMLMarkerTextRec {
     SGMLMarkerTextPart     sgml_marker_text;
 } SGMLMarkerTextRec;
 
-#endif SGMLMARKERTEXTP_H
+#endif

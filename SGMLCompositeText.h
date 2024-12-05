@@ -74,9 +74,9 @@ extern "C" {
 }
 #endif
 
-#endif /* _NO_PROTO */
+#endif
 
 #define SGMLIsCompositeText(w)     XtIsSubclass(w,sGMLCompositeTextObjectClass)
 
-#endif SGMLCOMPOSITETEXT_H
+#endif
 

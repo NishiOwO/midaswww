@@ -40,4 +40,4 @@ typedef struct _GhostviewPlusRec*	GhostviewPlusWidget;
 
 extern WidgetClass ghostviewPlusWidgetClass;
 
-#endif /* _GhostviewPlus_h */
+#endif

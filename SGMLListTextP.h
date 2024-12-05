@@ -59,4 +59,4 @@ typedef struct _SGMLListTextRec {
     SGMLListTextPart       sgml_list_text;
 } SGMLListTextRec;
 
-#endif SGMLLISTTEXTP_H
+#endif

@@ -26,4 +26,4 @@ void   SGMLFormSetResult();
 
 #define SGMLIsFormText(w)     XtIsSubclass(w,sGMLFormTextObjectClass)
 
-#endif SGMLFORMTEXT_H
+#endif

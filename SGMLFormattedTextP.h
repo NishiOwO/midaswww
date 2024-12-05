@@ -64,4 +64,4 @@ typedef struct _SGMLFormattedTextRec {
     SGMLFormattedTextPart  sgml_formatted_text;
 } SGMLFormattedTextRec;
 
-#endif SGMLFORMATTEDTEXTP_H
+#endif

@@ -201,4 +201,4 @@ typedef struct _SGMLTextRec {
     SGMLTextPart      sgml_text;
 } SGMLTextRec;
 
-#endif SGMLTEXTP_H
+#endif

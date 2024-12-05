@@ -78,8 +78,8 @@ Widget SGMLHyperSearch();
   void    SGMLHyperSetTags();
   char    *SGMLHyperGetText();
   void    SGMLHyperDeclareClass();
-#endif  
+#endif
 
 #define SGMLIsHyper(w)     XtIsSubclass(w,sGMLHyperWidgetClass)
 
-#endif SGMLHYPER_H
+#endif

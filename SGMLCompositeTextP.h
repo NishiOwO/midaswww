@@ -63,4 +63,4 @@ typedef struct _SGMLCompositeTextRec {
     SGMLCompositeTextPart  sgml_composite_text;
 } SGMLCompositeTextRec;
 
-#endif SGMLCOMPOSITETEXTP_H
+#endif

@@ -37,9 +37,9 @@ extern "C" {
 }
 #endif
 
-#endif /* _NO_PROTO */
+#endif
 
 #define SGMLIsRuleText(w)     XtIsSubclass(w,sGMLRuleTextObjectClass)
 
-#endif SGMLRULETEXT_H
+#endif
 

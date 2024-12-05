@@ -37,9 +37,9 @@ extern "C" {
 }
 #endif
 
-#endif /* _NO_PROTO */
+#endif
 
 #define SGMLIsPlainText(w)     XtIsSubclass(w,sGMLPlainTextObjectClass)
 
-#endif SGMLPLAINTEXT_H
+#endif
 

@@ -46,4 +46,4 @@ typedef struct _SGMLFormTextRec {
     SGMLFormTextPart       sgml_form_text;
 } SGMLFormTextRec;
 
-#endif SGMLFORMTEXTP_H
+#endif

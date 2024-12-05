@@ -22,5 +22,5 @@ typedef struct _SGMLTableTextRec  *SGMLTableTextObject;
 
 #define SGMLIsTableText(w)     XtIsSubclass(w,sGMLTableTextObjectClass)
 
-#endif SGMLTABLETEXT_H
+#endif
 

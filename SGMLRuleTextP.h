@@ -44,4 +44,4 @@ typedef struct _SGMLRuleTextRec {
     SGMLRuleTextPart     sgml_rule_text;
 } SGMLRuleTextRec;
 
-#endif SGMLRULETEXTP_H
+#endif

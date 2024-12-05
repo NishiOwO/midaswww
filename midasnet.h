@@ -20,7 +20,7 @@
 #include <sys/ioctl.h>
 #include <errno.h>
 #include <netinet/in.h>
-#endif /* UCX */  
+#endif
 
 #include <netdb.h>
 #include <stdio.h>
@@ -49,6 +49,6 @@ extern char *sys_errlist[];
 #define CADDR_T
 #define __TYPES_LOADED
 #include ctype
-#endif  
+#endif
 
 #include "midaswww.h"

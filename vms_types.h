@@ -348,4 +348,4 @@ typedef struct
     int  terminating_zero; \
   }  variable_name
 
-#endif /* !__VMS_TYPES_H__ */
+#endif

@@ -28,8 +28,8 @@
 #define NeedFunctionPrototypes 1
 #else
 #define NeedFunctionPrototypes 0
-#endif /* __STDC__ */
-#endif /* NeedFunctionPrototypes */
+#endif
+#endif
 
 	/* Constants used to index into the bounding box array. */
 

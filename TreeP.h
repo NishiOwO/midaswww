@@ -106,7 +106,7 @@ typedef struct _TreeConstraintsRec {
 #define TREE_HORIZONTAL_DEFAULT_SPACING 20
 #define TREE_VERTICAL_DEFAULT_SPACING 6
 
-#endif /* _XawTreeP_h */
+#endif
 
 
 

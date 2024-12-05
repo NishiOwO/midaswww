@@ -44,4 +44,4 @@ typedef struct _SGMLCaptionTextRec {
     SGMLCaptionTextPart    sgml_caption_text;
 } SGMLCaptionTextRec;
 
-#endif SGMLCAPTIONTEXTP_H
+#endif

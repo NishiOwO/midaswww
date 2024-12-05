@@ -51,4 +51,4 @@ typedef struct _SGMLTableTextRec {
     SGMLTableTextPart      sgml_table_text;
 } SGMLTableTextRec;
 
-#endif SGMLTABLETEXTP_H
+#endif

@@ -42,4 +42,4 @@ typedef struct _SGMLPlainTextRec {
     SGMLPlainTextPart      sgml_plain_text;
 } SGMLPlainTextRec;
 
-#endif SGMLPLAINTEXTP_H
+#endif

@@ -106,7 +106,7 @@ typedef struct {
     short		interpreter_input_iosb[4];  /* I/O Status Blocks    */
     short		interpreter_output_iosb[4]; /* for each mailbox     */
     char		*output_buffer; /* pointer to output buffer */
-#endif /* VMS */
+#endif
     Dimension		gs_width;	/* Width of window at last Setup() */
     Dimension		gs_height;	/* Height of window at last Setup() */
     Boolean		busy;		/* Is gs busy drawing? */
@@ -118,4 +118,4 @@ typedef struct _GhostviewRec {
     GhostviewPart	ghostview;
 } GhostviewRec;
 
-#endif /* _GhostviewP_h */
+#endif

@@ -118,4 +118,4 @@ extern void XawTreeForceLayout (
 );
 
 
-#endif /* _XawTree_h */
+#endif

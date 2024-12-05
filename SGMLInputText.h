@@ -60,9 +60,9 @@ extern "C" {
 }
 #endif
 
-#endif /* _NO_PROTO */
+#endif
 
 #define SGMLIsInputText(w)     XtIsSubclass(w,sGMLInputTextObjectClass)
 
-#endif SGMLINPUTTEXT_H
+#endif
 

@@ -34,9 +34,9 @@ extern "C" {
 }
 #endif
 
-#endif /* _NO_PROTO */
+#endif
 
 #define SGMLIsFormattedText(w)     XtIsSubclass(w,sGMLFormattedTextObjectClass)
 
-#endif SGMLFORMATTEDTEXT_H
+#endif
 

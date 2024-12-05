@@ -51,4 +51,4 @@ typedef struct _SGMLAnchorTextRec {
     SGMLAnchorTextPart     sgml_anchortext;
 } SGMLAnchorTextRec;
 
-#endif SGMLANCHORTEXTP_H
+#endif

@@ -20,5 +20,5 @@ typedef struct _SGMLCaptionTextRec  *SGMLCaptionTextObject;
 
 #define SGMLIsCaptionText(w)     XtIsSubclass(w,sGMLCaptionTextObjectClass)
 
-#endif SGMLCAPTIONTEXT_H
+#endif
 

@@ -48,4 +48,4 @@ typedef struct _GhostviewPlusRec {
 
 } GhostviewPlusRec;
 
-#endif /* _GhostviewPlusP_h */
+#endif

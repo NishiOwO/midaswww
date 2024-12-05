@@ -46,4 +46,4 @@ typedef struct _SGMLContainerTextRec {
     SGMLContainerTextPart  sgml_container_text;
 } SGMLContainerTextRec;
 
-#endif SGMLCONTAINERTEXTP_H
+#endif
