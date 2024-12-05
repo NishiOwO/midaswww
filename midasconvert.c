@@ -104,7 +104,7 @@ void MidasDeclareConverter(FromType,ToType,ConvertRtn)
          ab->FromType = FromType;
          ab->ToType = ToType;
 /*
-         printf("Convert %s to %s rtn=%x\n",FromType ,ToType,ConvertRtn);
+         printf("Convert %s to %s rtn=%d\n",FromType ,ToType,ConvertRtn);
          XtSetTypeConverter(FromType,ToType,MidasConversionConverter,
                             &ConvertArgs,XtNumber(ConvertArgs),XtCacheNone);
 */
@@ -498,6 +498,7 @@ void MidasConvertInit()
     MidasDeclareStringConverter("XmString",   MidasConvertStringXmString); 
     MidasDeclareStringConverter("MenuWidget", MidasConvertStringWidget);
     MidasDeclareStringConverter("Pixmap",     MidasConvertStringIcon);
+    MidasDeclareStringConverter("DynamicPixmap",     MidasConvertStringIcon);
     MidasDeclareStringConverter("Cursor",     MidasConvertStringCursor);   
     MidasDeclareStringConverter("Class",      MidasConvertStringClass);
     MidasDeclareStringConverter("Atom",       MidasConvertStringAtom);

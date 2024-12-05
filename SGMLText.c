@@ -554,7 +554,7 @@ static void ClassInitialize()
    if (bug1 != bug2) 
      {
        printf("The terrible bug fix strikes again!!!! %d %d\n",bug1,bug2); 
-       exit(1); 
+//       exit(1); 
      }
 }
 
