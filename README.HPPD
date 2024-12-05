@@ -1,0 +1,15 @@
+Package name:     midaswww
+Version number:   2.1
+Original author:  Tony Johnson and Chung Huynh <MidasWWW@Slac.Stanford.Edu>
+Report bugs to:   steff@csc.liv.ac.uk
+Tested on:        HP 9000/710 running HP-UX 9.03
+C compiler used:  Version A.09.77
+Purpose:
+The Midas WWW browser from Tony Johnson and Chung Huynh. This is a neat www
+browser - but is was written in 1993 so the new HTML extensions are not
+supported. It still has one or two unique features though, including a new
+hotlist display, a navigation tool and support for the selection of different
+fonts for the text and titles. There is also a new options dialog box, and many
+more features...
+Date archived:    Thu 20 Jul 1995
+Special notes:    Read HPUX.Install and README for further info.

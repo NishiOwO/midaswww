@@ -1,0 +1,48 @@
+Changes:
+ 
+ *** In Midas.uil
+    Make died on the UIL Pixmap Declarations. These were massaged slightly:
+
+
+
+  **From this Icon declaration:
+
+  HandyPakIcon: exported icon(color_table = color_table(background color = ' ',
+       foreground color = '*'),
+      '....lines of Icon data'  );
+
+   MidasIcon: exported icon(color_table = color_table(background color = ' ', 
+       foreground color = '*'),
+       '....lines of Icon data'  );
+
+
+
+
+ **To this declaration with a separate color definition table:
+
+   coltab:
+          color_table(background color = ' ', foreground color = '*');  
+
+    HandyPakIcon: exported icon(color_table = coltab,
+ 	  '....lines of Icon data'   );
+
+    MidasIcon: exported icon(color_table = coltab,              
+         '....lines of Icon data'  );
+
+ 
+***In Makefile.hp
+    Set the libs and include macros to use Motif 1.2 and X11R5
+
+
+To Build:
+   "make -f Makefile.hp" should do the trick.
+
+
+Hint:
+If you want to customize any of the defaults i.e. colours, URL's of interest
+the .ad (app defaults) files seem to be the place to start.
+
+If I am reading CommonMakfile correctly the ting to do then would be to make
+world, in this case that would mean...
+
+"make -f Makefile.hp world"
