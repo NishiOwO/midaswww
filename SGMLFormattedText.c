@@ -12,6 +12,7 @@
 #include <X11/StringDefs.h>
 #include <X11/CoreP.h>
 #include "SGMLFormattedTextP.h"
+#include <stdio.h>
 
 Widget ExtHiliteSelection();
 /* 

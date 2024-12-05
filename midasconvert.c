@@ -6,6 +6,8 @@
 #include <X11/cursorfont.h>
 #include <X11/CoreP.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include <stdio.h>
 
 typedef Boolean (*cr)();
 
@@ -302,6 +304,7 @@ static Boolean MidasConvertStringXmString(In,Out)
 MidasOperand *In;
 MidasOperand *Out;
 {
+   XtPointer MidasCharToString();
    Out->Value.P = (XtPointer) MidasCharToString(In->Value.P);
    Out->Dynamic = TRUE; /* Need special destructor for this ??? */
    return TRUE;
@@ -350,6 +353,7 @@ static Boolean MidasConvertStringWidget(In,Out)
 MidasOperand *In;
 MidasOperand *Out;
 {
+   XtPointer MidasFindWidget();
    Out->Value.P = (XtPointer) MidasFindWidget(In->Value.P);
    return TRUE;
 }
@@ -357,6 +361,7 @@ static Boolean MidasConvertStringIcon(In,Out)
 MidasOperand *In;
 MidasOperand *Out;
 {
+   XtPointer MidasFetchIcon();
    Out->Value.P = (XtPointer) MidasFetchIcon(In->Value.P,NULL);
    return TRUE;
 }
@@ -477,6 +482,7 @@ MidasOperand *Out;
 }
 void MidasConvertInit()
 {
+    void MidasDeclareFunction();
     ConverterList = NullList;
     MidasClassList = NullList;
 

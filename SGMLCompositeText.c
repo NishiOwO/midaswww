@@ -14,6 +14,8 @@
 #include "SGMLCompositeTextP.h"
 #include "SGMLFormattedText.h"
 
+#include <ctype.h>
+
 /* 
   Private functions 
 */
@@ -33,6 +35,9 @@ typedef struct _searchdata {
   Widget (*extsearch)();
   XtPointer pclosure;
 } searchdata;
+
+void _SGMLBreak(); 
+void SGMLHyperRedisplay(Widget w);
 
 /*
   Widget class methods

@@ -69,7 +69,7 @@ MidasOperand MidasApplyOperation(Op1,Op2,Op)
   else if (strcmp(Op->Symbol,"//") == 0) 
     {
       if (!v2) MidasError("Integer division by zero"); 
-      v = (char *) (((int) v1) / ((int) v2));
+      v = (char *) (((intptr_t) v1) / ((intptr_t) v2));
     }
   else if (Float)
     {
@@ -92,18 +92,18 @@ MidasOperand MidasApplyOperation(Op1,Op2,Op)
     }
   else
     {
-      if      (strcmp(Op->Symbol,">=") == 0) v = (char *) (((int) v1) >= ((int) v2)); 
-      else if (strcmp(Op->Symbol,"<=") == 0) v = (char *) (((int) v1) <= ((int) v2)); 
-      else if (strcmp(Op->Symbol,">" ) == 0) v = (char *) (((int) v1) >  ((int) v2)); 
-      else if (strcmp(Op->Symbol,"<" ) == 0) v = (char *) (((int) v1) <  ((int) v2)); 
-      else if (strcmp(Op->Symbol,"-")  == 0) v = (char *) (((int) v1) -  ((int) v2));
-      else if (strcmp(Op->Symbol,"+")  == 0) v = (char *) (((int) v1) +  ((int) v2));
-      else if (strcmp(Op->Symbol,"*")  == 0) v = (char *) (((int) v1) *  ((int) v2));
+      if      (strcmp(Op->Symbol,">=") == 0) v = (char *) (((intptr_t) v1) >= ((intptr_t) v2)); 
+      else if (strcmp(Op->Symbol,"<=") == 0) v = (char *) (((intptr_t) v1) <= ((intptr_t) v2)); 
+      else if (strcmp(Op->Symbol,">" ) == 0) v = (char *) (((intptr_t) v1) >  ((intptr_t) v2)); 
+      else if (strcmp(Op->Symbol,"<" ) == 0) v = (char *) (((intptr_t) v1) <  ((intptr_t) v2)); 
+      else if (strcmp(Op->Symbol,"-")  == 0) v = (char *) (((intptr_t) v1) -  ((intptr_t) v2));
+      else if (strcmp(Op->Symbol,"+")  == 0) v = (char *) (((intptr_t) v1) +  ((intptr_t) v2));
+      else if (strcmp(Op->Symbol,"*")  == 0) v = (char *) (((intptr_t) v1) *  ((intptr_t) v2));
       else if (strcmp(Op->Symbol,"/")  == 0) 
         {
           float r;
           if (!v2) MidasError("Division by zero"); 
-          if (((int) v1) % ((int) v2) == 0) v = (char *) (((int)  v1) / ((int)  v2));
+          if (((intptr_t) v1) % ((intptr_t) v2) == 0) v = (char *) (((intptr_t)  v1) / ((intptr_t)  v2));
           else
             {
                float f1 = Op1.Value.F;

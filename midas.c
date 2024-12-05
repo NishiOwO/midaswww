@@ -379,7 +379,7 @@ void MidasWidgetBeingDestroyed(w,mw,reason)
 {
     /* remove from hash chain */ 
  
-    int hash = ((int) w) % HASHTABLESIZE;
+    intptr_t hash = ((intptr_t) w) % HASHTABLESIZE;
     MidasWidget *loop = HashTable[hash];
   
     if (loop == mw) HashTable[hash] = mw->HashChain;
@@ -400,7 +400,7 @@ Widget w;
  *  This routine returns a pointer to the MidasWidget structure for any widget.
  */ 
 {
-    int hash = ((int) w) % HASHTABLESIZE;
+    intptr_t hash = ((intptr_t) w) % HASHTABLESIZE;
     MidasWidget *mw = HashTable[hash];
   
     for ( ; mw != NULL; mw = mw->HashChain)
@@ -1375,7 +1375,7 @@ Widget w;
     MidasOperand Temp;
     Temp.Dynamic = FALSE;
     Temp.Type = MInt;
-    Temp.Value.I = (int) w;
+    Temp.Value.I = (intptr_t) w;
     return Temp;
 }
 static MidasOperand MidasIsManaged(w)
@@ -2797,6 +2797,7 @@ char *MidasQueryUser(w)
 Widget w;
 {
   MidasOperand Temp;
+  char* MidasConvertToString();
   Temp = QueryUser(w);
   return (char *)MidasConvertToString(Temp);
 }
