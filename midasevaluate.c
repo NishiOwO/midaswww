@@ -1,6 +1,7 @@
 #include <Mrm/MrmAppl.h>                        /* Motif Toolkit and MRM */
 #include "midasoperand.h"
 #include <string.h>
+#include <stdint.h>
 
 extern Widget ActiveWidget;
 MidasOperand MidasGetIngotValue();
