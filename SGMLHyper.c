@@ -2191,7 +2191,7 @@ char   *fname;
     else
     {
         char msg[1024];
-        sprintf(msg,"%s: %s",fname,sys_errlist[errno]);
+        sprintf(msg,"%s: %s",fname,strerrno(errno));
         XtWarning(msg);
     }
     return result;  
