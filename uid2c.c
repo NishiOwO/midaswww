@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 /* convert uid file to ascii file to use in c */
 void converttoc ();
@@ -73,7 +74,7 @@ char *filein;
 char *getfilename (infile)
 char *infile;
 {
-	char filename[100];
+	static char filename[100];
 
 	strcpy(filename, infile);
 	filename[strlen(infile)-4] = '\0';
