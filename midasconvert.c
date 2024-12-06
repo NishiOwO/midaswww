@@ -514,6 +514,7 @@ void MidasConvertInit()
 
     MidasDeclareConverter("Boolean","String", MidasConvertBooleanString);
     MidasDeclareConverter("Boolean","name",   MidasConvertBooleanString);
+    MidasDeclareConverter("Boolean","Set",   MidasConvertBooleanString);
     MidasDeclareConverter("Int","String",     MidasConvertIntString);
     MidasDeclareConverter("Int","name",       MidasConvertIntString);
     MidasDeclareConverter("Float","String",   MidasConvertFloatString);

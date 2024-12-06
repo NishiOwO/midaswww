@@ -250,9 +250,9 @@ MessageBlock *mb;
     }   
   if (file->port == 0) file->port = appResources.default_HTTP_port;
 
+  sprintf(name,"%s:%d",XrmQuarkToString(file->node),file->port);
   if (http0List)
     {
-      sprintf(name,"%s:%d",XrmQuarkToString(file->node),file->port);
       item = MidasFindItemInList(http0List,name);
       if (item) return WWWFetchDocumentHTTP(w,file,mb); 
     }
@@ -275,11 +275,15 @@ MessageBlock *mb;
     }
   else *referer = '\0';
 
-  command = XtMalloc(20 + strlen(htrq) + strlen(referer) + (file->file ? strlen(XrmQuarkToString(file->file)) : 0));
+  command = XtMalloc(20 + strlen(htrq) + strlen(referer) + (file->file ? strlen(XrmQuarkToString(file->file)) : 0) + 5 + 1 + strlen(name) + 2);
 
   strcpy(command,"GET ");
   strcat(command,file->file ? XrmQuarkToString(file->file): "/"); 
   strcat(command," HTTP/1.0\r\n");
+
+  strcat(command,"Host: ");
+  strcat(command,name);
+  strcat(command,"\r\n");
 
   strcat(command, htrq);
   if (*referer)

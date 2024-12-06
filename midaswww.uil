@@ -21,7 +21,7 @@ object
             {
             XmMenuBar WWWMenu;
             XmForm WWWKey;
-            unmanaged XmRowColumn WWWHeader;
+	    unmanaged XmRowColumn WWWHeader;
             };
         };
     WWWMenu: XmMenuBar 

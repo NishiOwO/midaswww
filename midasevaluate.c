@@ -56,8 +56,8 @@ MidasOperand MidasApplyOperation(Op1,Op2,Op)
   v1 = (char *) Op1.Value.P;
   v2 = (char *) Op2.Value.P;
 
-  if      (strcmp(Op->Symbol,"==") == 0) v = (char *) (strcmp(v1,v2) == 0); 
-  else if (strcmp(Op->Symbol,"!=") == 0) v = (char *) (strcmp(v1,v2) != 0); 
+  if      (strcmp(Op->Symbol,"==") == 0) v = (char *) ((intptr_t)strcmp(v1,v2) == 0); 
+  else if (strcmp(Op->Symbol,"!=") == 0) v = (char *) ((intptr_t)strcmp(v1,v2) != 0);
   else if (strcmp(Op->Symbol,"&&") == 0) v = v1 ? v2 : (char *) FALSE; 
   else if (strcmp(Op->Symbol,"||") == 0) v = v1 ? (char *) TRUE :  v2; 
   else if (strcmp(Op->Symbol,"++") == 0) 

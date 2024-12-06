@@ -23,6 +23,7 @@
 #include "Tree.h"
 
 typedef Widget (*MidasWidgetScanProc)();
+Boolean MidasGetQualifier();
 
 #ifdef VMS
 #define FAILURE 0
@@ -1727,6 +1728,8 @@ char *name;
 #endif
    return filename;
 }
+
+
 Widget MidasCreateDialog(name)
 char *name;
 {

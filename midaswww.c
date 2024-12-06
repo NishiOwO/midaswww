@@ -2366,6 +2366,7 @@ WWWFile *file;
 List *include;
 char *title;
 {
+  Widget MidasTraceWidgetTree();
   MessageBlock mb;
   MidasShell *ms = MidasGetShell(w);
   MidasOperand Popup;
@@ -2389,7 +2390,7 @@ char *title;
     }
   else info = (Widget) Popup.Value.P;
  
-  draw = MidasTraceWidgetTree(info,".XmDrawingArea");
+  draw = MidasTraceWidgetTree(info,strdup(".XmDrawingArea"));
   XtAddCallback(draw,XmNexposeCallback,(XtCallbackProc) DrawMessage,(XtPointer) &mb); 
   XtAddCallback(info,XmNunmapCallback,(XtCallbackProc) SetFlag,(XtPointer) &mb.flag);
   XtAddGrab(info,TRUE,FALSE);
