@@ -1,6 +1,7 @@
 This is MidasWWW 2.1, patched so it compiles on NetBSD/Debian.
 Confirmed to be working on:
   1. NetBSD/amd64 10.0
+  2. Debian GNU/Linux 12
 
 TODO: Fix MessageWindow/CommandWindow
 --- original README ---
