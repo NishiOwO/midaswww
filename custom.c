@@ -1,5 +1,6 @@
 #include <stdio.h>                              /* For printf and so on. */
 #include <string.h>
+#include <ctype.h>
 #include <Mrm/MrmAppl.h>                        /* Motif Toolkit and MRM */
 #include <Xm/Text.h>
 #include <Xm/ToggleBG.h>

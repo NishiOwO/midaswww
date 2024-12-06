@@ -31,6 +31,7 @@
 #define BUFSIZ 1024
 #endif
 #include <ctype.h>
+#include <stdlib.h>
 #include <X11/Xos.h>		/* #includes the appropriate <string.h> */
 #include "ps.h"
 

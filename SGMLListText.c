@@ -12,6 +12,7 @@
 #include <X11/StringDefs.h>
 #include "SGMLListTextP.h"
 #include "SGMLMarkerText.h"
+#include <ctype.h>
 
 /* 
   Private functions 

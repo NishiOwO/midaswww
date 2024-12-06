@@ -33,6 +33,7 @@
 #include <X11/CoreP.h>
 #include <X11/CompositeP.h>
 #include <X11/ConstrainP.h>
+#include <ctype.h>
 #include "TreeP.h"
 
 #define IsHorizontal(tw) ((tw)->tree.gravity == WestGravity || \

@@ -20,6 +20,7 @@
 
 #include <Xm/MessageB.h> 
 #include <X11/Xatom.h>
+#include <ctype.h>
 #include <string.h>
 #include <pwd.h>
 
@@ -3700,6 +3701,7 @@ Widget shell;
   int i,j,n = 0;
   char **cleanup;
   WWWFiletype *types;
+  Pixmap MidasFetchIcon();
   static char bits[] = {0x01, 0x02};
   
   XtGCMask valueMask = GCBackground | GCForeground | GCFont | GCLineWidth | GCFillStyle | GCStipple;  

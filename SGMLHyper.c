@@ -14,6 +14,7 @@
 #include <errno.h>
 #include <ctype.h>
 #include <string.h>
+#include <stdlib.h>
 #include <X11/IntrinsicP.h>
 #include <X11/StringDefs.h>
 #include <X11/CoreP.h>

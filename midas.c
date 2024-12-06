@@ -2,6 +2,7 @@
 #include <setjmp.h>                             /* For setjmp and so on. */
 #include <stdlib.h>                             /* for system() etc.     */
 #include <string.h>
+#include <ctype.h>
 #include <stdint.h>
 #include <Mrm/MrmAppl.h>                        /* Motif Toolkit and MRM */
 #include <X11/CoreP.h> 

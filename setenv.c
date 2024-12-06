@@ -22,6 +22,7 @@ static char sccsid[] = "@(#)setenv.c	5.4 (Berkeley) 6/1/90";
 #endif /* LIBC_SCCS and not lint */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <sys/types.h>
 //extern char *malloc();
 extern char *_findenv(register char *name,int *offset);
