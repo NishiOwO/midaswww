@@ -1,3 +1,9 @@
+This is MidasWWW 2.1, patched so it compiles on NetBSD/Debian.
+Confirmed to be working on:
+  1. NetBSD/amd64 10.0
+
+TODO: Fix MessageWindow/CommandWindow
+--- original README ---
                                                             Obtaining Midas WWW
                               OBTAINING MIDAS WWW
                                        
